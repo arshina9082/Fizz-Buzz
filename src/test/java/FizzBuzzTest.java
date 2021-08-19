@@ -32,4 +32,43 @@ public class FizzBuzzTest {
         assertEquals(expectedOut,actualOut);
 
     }
+
+    @Test
+    void toCheckIfNumberContainsThreeOrDivisibleByThree()
+    {
+        FizzBuzz obj = new FizzBuzz(27);
+        String expectedOut = "Fizz";
+        String actualOut = obj.divisibleOrContainsThreeOrFive();
+        assertEquals(expectedOut,actualOut);
+
+    }
+
+    @Test
+    void toCheckIfNumberContainsFiveOrDivisibleByFive()
+    {
+        FizzBuzz obj = new FizzBuzz(50);
+        String expectedOut = "Buzz";
+        String actualOut = obj.divisibleOrContainsThreeOrFive();
+        assertEquals(expectedOut,actualOut);
+
+    }
+
+    @Test
+    void toCheckIfNumberIsDivisibleByThreeAndFive()
+    {
+        FizzBuzz obj = new FizzBuzz(60);
+        String expectedOut = "FizzBuzz";
+        String actualOut = obj.divisibleOrContainsThreeOrFive();
+        assertEquals(expectedOut,actualOut);
+
+    }
+
+    void toCheckIfNumberIsNotDivisibleByThreeNorFive()
+    {
+        FizzBuzz obj = new FizzBuzz(61);
+        String expectedOut = "null";
+        String actualOut = obj.divisibleOrContainsThreeOrFive();
+        assertEquals(expectedOut,actualOut);
+
+    }
 }
