@@ -1,13 +1,12 @@
 public class FizzBuzz {
     int number;
     int digit;
-    int num = number;
 
     public FizzBuzz(int number) {
         this.number = number;
     }
 
-    public String divisibleByThreeAndFive() {
+    public String divisibleByThreeOrFive() {
         if (number <= 100) {
             if (number % 3 == 0)
                 return "Fizz";
@@ -21,11 +20,11 @@ public class FizzBuzz {
 
     public String divisibleOrContainsThreeOrFive() {
         String str = Integer.toString(number);
-        if(num%15==0)
+        if(number%15==0)
             return "FizzBuzz";
-        else if((num%3 == 0) || str.contains("3"))
+        else if((number%3 == 0) || str.contains("3"))
             return "Fizz";
-        else if((num%5 == 0) || str.contains("5"))
+        else if((number%5 == 0) || str.contains("5"))
             return "Buzz";
         return "null";
     }

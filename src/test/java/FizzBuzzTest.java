@@ -8,7 +8,7 @@ public class FizzBuzzTest {
     {
         FizzBuzz obj = new FizzBuzz(6);
         String expectedOut = "Fizz";
-        String actualOut = obj.divisibleByThreeAndFive();
+        String actualOut = obj.divisibleByThreeOrFive();
         assertEquals(expectedOut,actualOut);
 
     }
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
     {
         FizzBuzz obj = new FizzBuzz(10);
         String expectedOut = "Buzz";
-        String actualOut = obj.divisibleByThreeAndFive();
+        String actualOut = obj.divisibleByThreeOrFive();
         assertEquals(expectedOut,actualOut);
 
     }
@@ -28,7 +28,7 @@ public class FizzBuzzTest {
     {
         FizzBuzz obj = new FizzBuzz(61);
         String expectedOut = "null";
-        String actualOut = obj.divisibleByThreeAndFive();
+        String actualOut = obj.divisibleByThreeOrFive();
         assertEquals(expectedOut,actualOut);
 
     }
